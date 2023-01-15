@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light p-2">
+        <div class="col-3">
+            <div class="oLgos d-flex align-items-center">
+                <a class="navbar" href="https://www.guayerd.com/es/inicio/"><img class="img1" src="./imagenes/LogoGuayerd.jpeg"></a>
+                <img src="./imagenes/Logo La Scaloneta.png" class="LgoLS img-fluid h-25 pb-2 m-2"></a>
+            </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 h-25 pb-2 ">
+                <li class="nav-item">
+                <a class="nav-link active  " aria-current="page" href="./mapa.html">Mapa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Jugadores</a>
+                </li>
+            </ul>
+            <button class="btn btn-primary" type="button" id="logout-button">Cerrar Sesion</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="tittle text-center my-4">
+            <h1 class="fw-bold " ><span class="tittle-styles text-info bg">Nuestros</span> jugadores</h1>
+        </div>
+        <div class="container-cards">
+            <section class="row row-cols-1 row-cols-md-3 g-4 mb-4"></section>
+        </div>
+    </main>
+    <script src='./js/jugadores.js'></script>
+</body>
+</html>

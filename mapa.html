@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+        <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+        <nav id="nav" class="navbar navbar-expand-xl navbar-light bg-light p-2">
+            <div class="col-3">
+                <div class="oLgos d-flex align-items-center">
+                    <a class="navbar" href="https://www.guayerd.com/es/inicio/"><img class="img1"  src="./imagenes/LogoGuayerd.jpeg"></a>
+                    <img src="./imagenes/Logo La Scaloneta.png" class="LgoLS img-fluid h-25 pb-2 m-2"></a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 h-25 pb-2 ">
+                    <li class="nav-item">
+                    <a class="nav-link active  " aria-current="page" href="#">Mapa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./jugadores.html">Jugadores</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary" type="button" id="logout-button">Cerrar Sesion</button>
+            </div>
+        </nav>
+    <div class="content-select ">
+        <div id="select-location " >
+            <select  class="flex-xxl-column-reverse" name="location" id="location">
+                <option value="25.2841478, 51.4419568">El camino que recorri</option>
+                <option value="-32.95823945044455, -60.69870205578163">Lionel Messi</option>
+                <option value="-40.748433, -73.135656">Emiliano Martínez</option>
+                <option value="-32.957375233536524, -60.69011898743008">Ángel Di María </option>
+                <option value="-31.66619498787141, -63.203493248923394">Julián Álvarez</option>
+                <option value="-34.68682337551217, -58.563381456279764">Leandro Paredes</option>
+                <option value="-38.72924400165914, -62.23062565065892">Lautaro Martínez</option>
+                <option value="-31.77672990644633, -63.79953840770311">Paulo Dybala</option>
+                <option value="-27.584664779762743, -65.62399489840676">Joaquín Correa</option>
+                <option value="-34.36317557350624, -58.799696275036005">Nicolás González</option>
+                <option value="-32.957375233536524, -60.69011898743008"> Ángel Correa</option>
+                <option value="-34.60359758597557, -58.38157040262272">Alejandro Gómez </option>
+                <option value="-32.957375233536524, -60.69011898743008">Giovani Lo Celso</option>
+                <option value="-34.576459179453465, -58.54057027163417">Enzo Fernández</option>
+                <option value="-34.683445745839975, -58.342907502579465">Rodrigo De Paul</option>
+                <option value="-36.62122683200293, -64.29299839091573">Alexis Mac Allister</option>
+                <option value="-34.598808727363924, -58.533751508814376">Guido Rodríguez</option>
+                <option value="-38.90321190019525, -70.06531282301451">Marcos Acuña</option>
+                <option value="-34.79035284403179, -58.35260053043434">Nicolás Tagliafico</option>
+                <option value="-33.14699031990493, -59.31339374233731">Lisandro Martínez</option>
+                <option value="-34.471896101253904, -58.65570459405564">Nicolás Otamendi</option>
+                <option value="-31.4146141413549, -64.17684523580274">Cristian Romero </option>
+                <option value="-38.70901998119311, -62.27783252693972">Germán Pezzella </option>
+                <option value="--32.205078744269706, -64.4002207687477">Nahuel Molina</option>
+                <option value="-34.762408187801384, -58.62956164622526">Gonzalo Montiel</option>
+                <option value="-34.93558248671228, -57.97119538183667">Gerónimo Rulli</option>
+                <option value="-33.04960319662254, -61.172648778971954">Franco Armani</option>
+            </select>
+            <div id="map"></div>
+            <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+                integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+                crossorigin=""></script>
+            <script src='./js/map.js'></script>
+</body>
+</html>

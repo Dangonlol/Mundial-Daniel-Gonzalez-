@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-seri
+}
+
+body#login{
+    background: url(./imagenes/Bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+#login-form{
+    min-height: 301px;
+    min-width: 364px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+#login-title{
+    width: 192px;
+    height: 37px;
+    left: calc(50% - 192px/2 );
+    top:calc(50% - 37px/2 - 100.5px);
+    font-style: normal;
+    font-weight:1200;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.userField,.passField{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0;
+}
+
+
+.login-l-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+form{
+    background: white;
+}
+
+#user, #pass{
+    box-sizing: border-box;
+    width: 310px;
+    height: 40px;
+    left:  calc(50% - 38px/2 + 1px);
+    top: calc(50% - 38px/2 -32px);
+    background: #FFFFFF;
+    border: 1px solid #c6c6c6;
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 18);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+
+}
+
+#userLabel, #passLabel {
+    position: relative;
+    width: 67px;
+    height: 18px;
+    left:  calc(50% -67px/2 - 110.5);
+    top: calc(50% - 18px/2 + 11px);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 14px;
+    color: #000;
+}
+
+#loginBtn {
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 294px;
+    height: 38px;
+    left: calc(50% - 294px/2);
+    top:  calc(50% -38px/2 + 98px);
+    background: #374785;
+    border: 1px solid #24305e;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.footer-container {
+    background: #FFFFFF;
+    padding: 0.1em ;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#logo-footer a {
+    color: #1e3261;
+    left: 92.91%;
+    right: 6.09%;
+    top: 96%;
+    bottom: 2.34%;
+    font-size: 20px;
+}
+
+#copa {
+    display: none;
+}
+
+.btn-primary {
+    background-color:#374785!important;
+}
+
+.content-select select{
+    position: relative;
+    width: 326px;
+    height: 38px;
+    left: 557px;
+    text-align: center;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    z-index: 20;
+    margin-top: 30px;
+}
+
+.content-select{
+    height: 20px;
+    margin: 0;
+}
+
+.leaflet-control-attribution.leaflet-control{
+    display: none !important;
+}
+
+#map { 
+    position: absolute;
+    width: 100vw;
+    top: 36px;
+    margin-top: 20px;
+    z-index:10;
+    height: calc(100vh - 56px);
+}
+
+.btn-primary {
+    background-color:#374785!important;
+}
+
+.content-select select{
+    position: relative;
+    width: 326px;
+    height: 38px;
+    left: 557px;
+    text-align: center;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    z-index: 20;
+    margin-top: 30px;
+}
+
+.content-select{
+    height: 20px;
+    margin: 0;
+}
+
+.leaflet-control-attribution.leaflet-control{
+    display: none !important;
+}
+
+#map { 
+    position: absolute;
+    width: 100vw;
+    top: 36px;
+    margin-top: 20px;
+    z-index:10;
+    height: calc(100vh - 56px);
+}
+.dorsal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 500px) {
+    body#login {
+        background: transparent;
+    }
+    #copa{
+        display: block;
+        position:relative;
+        width: 199px;
+        height: 200px;
+    }
+
+    #logo-footer{
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    #map {
+        height: 90%;
+        width: 90vh;
+        z-index: 10;
+    }
+    #nav{
+        z-index:40 ;
+        width: 100%;
+    }
+}
+
+.card .img-wrapper {
+    overflow: hidden;
+    }

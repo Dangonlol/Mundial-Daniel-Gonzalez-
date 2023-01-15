@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body id="login">
+    <div class="login-container">
+    <div class="login-l-side">
+        <form action="post" id="login-form">
+            <div>
+                <img src="./imagenes/Logo-copa.png" id="copa">
+            </div>
+        <div class="title-container">
+            <h2 id="login-title">Inicio de Sesión </h2>
+        </div>
+        <div class="userField">
+            <label for="user" id="userLabel">Email <span>*</span></label>
+            <input type="text"  id="user" />
+        </div>
+        <div class="passField">
+            <label for="pass" id="passLabel">Password<span>*</span></label>
+            <input type="password"  id="pass" />
+        </div>
+        <div class="btn-container">
+            <button  id="loginBtn" >Iniciar Sesión</button>
+        </div>
+        <span id="errorMsj"></span>
+        </form>
+        <div class="footer-container">
+            <footer id="logo-footer">
+                <a class="logo-a" href="https://www.guayerd.com/es/inicio/"><img src="./imagenes/LogoGuayerd.jpeg"></a>
+            </footer>
+        </div>
+    </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
